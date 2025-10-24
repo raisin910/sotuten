@@ -1,0 +1,4 @@
+# Ignore local secret configuration
+.env.local
+# Local JS config with secrets
+js/config.local.js
