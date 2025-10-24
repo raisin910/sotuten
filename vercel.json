@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "**/*", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/" }
+  ],
+  "build": {
+    "env": {
+      "REPLACE_WITH_API_KEY": "${NEXT_PUBLIC_GEMINI_API_KEY}"
+    }
+  }
+}
